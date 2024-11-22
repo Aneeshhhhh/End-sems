@@ -1,0 +1,21 @@
+268 and 884
+For this algorithm, divide the larger number by the smaller number
+then divide the smaller number by the remainder(now quotient) and place the remainder(the quotient) at the smaller number's place and the original remainder at the quotient's place.
+This goes on till the remainder is 0
+The gcd is the last non-zero remainder
+
+884/268 = 3.smth
+268 *3 = 804
+therefore remainder is 80
+1. 884 = 268*3+80
+now, 268/80
+2. 268 = 80*3+28
+now, 80/28
+80 = 28*2+24
+now, 28/24
+28 = 24*1+4
+now, 24/4
+24 = 4*6+0
+
+The last non-zero remainder is 4. therefore it is the GCD
+
