@@ -1,0 +1,17 @@
+X = 2 mod 3 (If X/3, the remainder is 2)
+X = 4 mod 5
+X = 2 mod 7
+values like these will be given
+
+the multiplication of all the mod-after's(3*5*7) is the limit of combinations
+
+These equations are interpreted as
+X=3k+2
+X=5k+4
+X=7k+2
+
+Pick the last value and assign k = 0, 1, 2 so on until it reaches the limit of combinations
+Then from, the list of values, find the values that can be divided by 3 and leave 2 as remainder.
+
+After finding those values, use the first equation to short them even further
+Then the least common value is the answer or X
