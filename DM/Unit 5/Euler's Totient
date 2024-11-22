@@ -1,0 +1,16 @@
+ Find the Euler’s Totient function of the following numbers :
+ i) 13
+ ii) 81
+ iii)120
+
+1. If the number is prime, then 13-1=12 is the answer
+2. If the number is not prime, find such numbers that when multiplied equal to it, preferably the ones with exponentials.
+Therefore, 81 can be written as 3^4
+The formula is that 81*(1-(1/the base number or 3)) = 54
+
+3. For 120, the numbers will be 2^3*3*5
+so by using the formula, we will get 32
+
+It is important to note that to get the lower numbers, just divide the number by the most probable number you think and find number that when multiplied, are the quotients
+ 
+ 
