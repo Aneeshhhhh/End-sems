@@ -1,0 +1,10 @@
+Take the square of the number
+take the prime numbers till and including that square root number
+see if any of the numbers in the list divide the number.
+If yes, then not prime, else prime.
+
+ex: 143
+square root of 143 = 11.9
+take numbers till 11
+2, 3, 5, 7, 11
+divisible by 11, therefore not prime
