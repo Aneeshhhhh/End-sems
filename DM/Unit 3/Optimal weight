@@ -1,0 +1,4 @@
+Add the lowest numbers in the series and record the sums
+Add up the sums, that's the optimal weight.
+
+For the tree, just make it as you with each step but remember that lower number = left and greater number = right always
