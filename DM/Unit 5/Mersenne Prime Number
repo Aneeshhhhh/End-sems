@@ -1,0 +1,11 @@
+If no. = 2^n-1, then it is a mersenne prime number
+still, if n is even, check with primality test since there's a chance that it can be not prime.
+
+ex:
+31
+2^5-1 = 31
+hence prime
+
+255
+2^8-1 = 255
+but divisible by 3, 5 and 15
