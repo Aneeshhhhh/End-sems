@@ -1,0 +1,15 @@
+MAX FLOW = MIN CUT
+Max flow:
+Take the most direct paths and then proceed to cover all paths
+After you've passed through a path, subtract the lowest value of the path from all the existing values of the path
+If you encounter a path in which a value is 0, consider that path blocked
+
+Record the lowest values for each path
+Add them up, that is the max flow value
+
+Min flow:
+Make the same strucutre of the graph with the 0s of the max flow
+find a way to cut the sink off the graph
+choose any of the 0 vertices and then cut them 
+add the values of the cut vertices
+that is the min cut value
