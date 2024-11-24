@@ -1,0 +1,5 @@
+Cosets : A coset is a subset of a group formed by shifting a subgroup with an element
+of the group.
+Left Coset: For a subgroup H of a group G, and an element g ∈ G, the left coset is
+gH ={g ⋅ h ∣ h ∈ H}
+For the right coset : Hg={ h ⋅ g ∣ h ∈ H}
