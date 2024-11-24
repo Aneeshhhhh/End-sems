@@ -1,0 +1,26 @@
+ List all the congruence class modulo 6. List at least 3 elements to left as
+ well as right of the modulo class k (where k = 0 to n-1)
+
+For this problem, the equation is 
+6n+k
+k = 0 to n-1
+n is determined by "at least 3 elements to left and right"
+
+class k modulo 6
+write in this format
+
+class 0 modulo 6: 
+-12, -6, 0, 6, 12
+
+class 1 modulo 6:
+-11, -5, 1, 7, 13
+
+
+
+
+
+
+
+
+
+
