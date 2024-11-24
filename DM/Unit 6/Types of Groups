@@ -1,0 +1,33 @@
+Semigroup : A group that consist of a set S and a binary operation that satisifies the associative propery.
+S  = {1, 2, 3}
+Binary Operation: A rule that combines two elements in S to produce another element in S.
+Associativity :
+For all a,b,c ∈ S : (a*b)*c = a*(b*c)
+
+
+Monoids : A semigroup that consists of an identity element. It satisfies the following:
+1. Associativity : derived from the semigroup
+2. Identity element : There exists such an element e ∈ M such that for all a ∈ M, 
+e*a = a*e = a. For example, if e is 0
+
+Groups : A group is a monoid that also has an inverse for every element. It satisfies:
+1. Associativity : Derived from semi group
+2. Identity Element : Derived from monoid
+3. Inverse Element : a*a^-1 = a^-1*a = e   E is the identity element
+
+Abelian Group : An Abelian group is a group that satisfies the commutative property
+along with the group propoerties. It satisfies:
+1. Associativity
+2. Identity Element
+3. Inverse Element
+4. Commutavity : For all a,b ∈ G, 
+a*b = b*a
+The order of operation matters for these groups.
+
+Permutation Group: A permutation group is a set of all permutations of a given set,
+equipped with the operation of composition.
+Key properties:
+1. Closure : Combining two permuts results in another permut
+2. Associativity : f o (g o h) = (f o g) o h
+3. Identity element
+4. Inverse : Every permut has an inverse which undoes the permutation
