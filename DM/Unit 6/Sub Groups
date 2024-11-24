@@ -1,0 +1,4 @@
+A normal subgroup N is a subgroup of a group G that stays the same when you move its elements
+within the group.
+For everg g in group G, if you take an element n from the normal sub-group N and apply
+g * n * g^-1, the result is still N
