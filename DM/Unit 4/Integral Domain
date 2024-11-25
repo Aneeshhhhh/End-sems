@@ -1,0 +1,7 @@
+An integral domain is a specific type of Ring in algebraic structures that satisfies 
+additional properties to prevent zero divisors.
+
+It has the following properties:
+1. Commutative
+2. Existence of Identity(Multiplicative) : a*1 = a
+3. No zero divisors : If a,b ∈ R and a*b = 0 then either a = 0 or b = 0
