@@ -1,0 +1,11 @@
+f: A → B and g : B → C
+
+then the composition of g o f is a function:
+g o f : A → C such that (g o f)(x) = g(f(x))
+
+Let 𝑓(𝑥)=𝑥2  and 𝑔(𝑥)=𝑥+3 
+Then the composition of g o f is:
+(g o f)(x) = g(f(x)) = g(x2) = x2+3
+
+the composition of f o g is:
+(f o g)(x) = f(g(x)) = f(x+3) = (x+3)2 = x2+6x+9
