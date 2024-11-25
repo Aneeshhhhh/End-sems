@@ -1,0 +1,6 @@
+1. It states that if there are n+1 piegons and only n piegon holes, then two piegons will
+share the same hole
+
+Extended Piegonhole Principle:
+If n piegon are are assigned to m piegon holes then one of the piegon holes must be
+occupied by at least [(n-1)/m]+1 piegon holes.
