@@ -1,0 +1,15 @@
+A function is a rule that assigns each element of a set A(domain) to exactly one
+element of a set B(co-domain)
+Terms:
+1. Domain : The set of all input values for which the func is defined
+2. Co-domain : The set of all possible output values
+3. Range : The actual set of outputs obtained from the function
+
+Types of Functions:
+1. Injective(One to One): Every element in the co=domain is mapped out by at most
+one element from the domain
+
+2. Surjective(Onto) : Every element in the co-domain is mapped out by at least
+one element from the domain
+
+3. Bijective(One to one and Onto) : A function that is both injective and surjective.
