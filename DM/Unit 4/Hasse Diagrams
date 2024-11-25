@@ -1,0 +1,9 @@
+A Hasse Diagram is a graphical representation of a partially ordered set(poset). It helps
+visualize the relationships between elements in the set based on a partial order.
+
+Key concepts : 
+A. Poset : A poset is a set P with a binary relation <= that satisfies:
+1. Reflexive : a<=a for all a ∈ P
+2. Anti-symmetric: If a<=b and b<=a then a=b
+3. Transitive : If a<=b and b<=c then a<=c
+
