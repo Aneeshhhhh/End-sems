@@ -1,0 +1,16 @@
+A field is a set F equipped with two operations:
+Tke numbers 2 and 3
+1. Addition
+2. Multiplication
+
+These operations must satisfy:
+Commutativity: a+b = b+a and a*b=b*a
+Asociativity: a+(b+c)=(a+b)+c and a*(b*c)=(a*b)*c
+Identity element:
+0 is the additive identity : a+0=a
+1 is the multiplicative identity : a*1=a
+
+Inverse element : 
+Additive : a+(-a)=0
+Multiplicative : a
+Distributivity : a*(b+c) = (a*b)+(a*c)
