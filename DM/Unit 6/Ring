@@ -1,0 +1,11 @@
+A ring is a set R equipped with two binary operations:
+1. Additive Closure : For all a,b ∈ R, a+b ∈ R
+2. Additive commutativity : a+b = b+a
+3. Additive Associativity : a+(b+c) = (a+b)+c
+5. Additive identity: There exists 0 ∈ R s.t a+0=a for all ∈ R
+6. Additive Inverse : For each a ∈ R, there exists -a s.t a+(-a)=0
+7. Multiplicative Closure : For all a, b ∈ R, a*b ∈ R
+8. Distributivity of Multiplication over Additon:
+a*(b+c) = (a*b)+(a*c)
+(a+b)*c = (a*c)+(b*c)
+
