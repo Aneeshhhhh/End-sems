@@ -1,0 +1,8 @@
+Hamming Distance Problems:
+Hamming distance is the number of dissimilar bits in two codewords.
+
+Compare each codeword and write the distance in the table
+
+If the problem is of 10 codes, the table will be of 10
+with the first code word having 4, then 3, 2 and 1 and the 5th element would be on the last 2 of the codeword 2 side 
+because it has been compared with everything else before
