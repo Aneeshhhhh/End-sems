@@ -1,0 +1,29 @@
+Hamiltonian Path: A Hamiltonian path in a graph is a graph that visits each vertex
+exactly once. The focus is entirely on visiting all the vertices.
+Edges may be repeated
+
+Eulerian Path : Traverses every edge once
+Vertices may be repeated.
+
+
+Hamiltonian Graph : A Hamiltonian graph is a graph that contains a Hamiltonian cycle.
+This means that there exists a closed loop in the graph that visits every vertex exactly 
+once and then returns to the starting vertex.
+
+Key Features of a Hamiltonian Graph:
+1. Every vertex is visited exactly once in the cycle.
+2. The edges in the cycle form a closed loop.
+3. Not all edges of the graph need to be used.
+
+
+Eulerian Graph : An Eulerian graph is a graph in which there exists a Eulerian Cycle.
+It is a closed path that visits every edge in the graph exactly once.
+
+Key Features of an Eulerian Graph:
+1. Every edge is traversed exactly once.
+2. Vertices can be revisited.
+For an undirected graph:
+1. Every vertex must have an even degree (even number of edges connected to it).
+For a directed graph:
+1. Each vertex must have the same in-degree and out-degree
+
