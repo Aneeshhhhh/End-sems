@@ -1,0 +1,32 @@
+A graph is a mathematical structure used to model connections between pairs or objects.
+It consists of:
+A. Vertices:
+1. These are the individual points or nodes in the graph.
+2. In a graph, there are n vertices
+
+B. Edges:
+These are the lines that form connections between vertices
+2. 
+
+Based on Direction:
+
+Undirected Graph: Edges have no direction, meaning the relationship is mutual
+
+Directed Graph (Digraph): Edges have a direction, represented as an arrow 
+Based on Connectivity:
+
+Connected Graph: There is a path between every pair of vertices.
+Disconnected Graph: Some vertices are isolated or unreachable.
+
+Special Types:
+
+Weighted Graph: Each edge has a weight or value (e.g., distance, cost).
+Cyclic Graph: Contains at least one cycle (a closed path).
+Acyclic Graph: Contains no cycles.
+
+
+Self-loops: It is an edge that connects a vertex to itself.
+A self-loop increases the degree of the vertex by 2 (one for entering and one for leaving the vertex).
+
+
+Parallel edges: are two or more edges that connect the same pair of vertices.
