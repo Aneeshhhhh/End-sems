@@ -1,0 +1,47 @@
+function deleteBinaryTree(root, value):
+    if root is null:
+        return null  # If the tree is empty
+
+    target ← null
+    queue ← Initialize empty queue
+    enqueue(queue, root)
+
+    # Level-order traversal to find the target node and the deepest node
+    while queue is not empty:
+        current ← dequeue(queue)
+
+        if current.value == value:
+            target ← current
+
+        if current.left is not null:
+            enqueue(queue, current.left)
+
+        if current.right is not null:
+            enqueue(queue, current.right)
+
+        deepest ← current  # Update deepest node at every level
+
+    if target is not null:
+        target.value ← deepest.value  # Replace target node's value with the deepest node's value
+        deleteDeepestNode(root, deepest)  # Delete the deepest node
+
+    return root
+
+function deleteDeepestNode(root, deepestNode):
+    queue ← Initialize empty queue
+    enqueue(queue, root)
+
+    while queue is not empty:
+        current ← dequeue(queue)
+
+        if current.left is not null:
+            if current.left == deepestNode:
+                current.left ← null
+                break
+            enqueue(queue, current.left)
+
+        if current.right is not null:
+            if current.right == deepestNode:
+                current.right ← null
+                break
+            enqueue(queue, current.right)
