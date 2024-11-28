@@ -1,0 +1,10 @@
+BFS(start_node):
+    create an empty queue
+    enqueue start_node
+
+    while queue is not empty:
+        dequeue current_node
+        if current_node is not visited
+          mark current_node visited
+          for each neighbor
+             enqueue neighbor
