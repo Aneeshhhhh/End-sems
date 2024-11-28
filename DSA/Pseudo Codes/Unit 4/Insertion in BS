@@ -1,0 +1,24 @@
+function insertBinaryTree(root, value):
+    newNode ← createNewNode(value)
+    if root is null:
+        return newNode  # If the tree is empty, the new node becomes the root
+    
+    queue ← Initialize empty queue
+    enqueue(queue, root)
+
+    while queue is not empty:
+        current ← dequeue(queue)
+
+        if current.left is null:
+            current.left ← newNode
+            break
+        else:
+            enqueue(queue, current.left)
+
+        if current.right is null:
+            current.right ← newNode
+            break
+        else:
+            enqueue(queue, current.right)
+
+    return root
