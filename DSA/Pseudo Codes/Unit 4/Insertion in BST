@@ -1,0 +1,20 @@
+function insert(root, value):
+    newNode ← createNewNode(value)
+    
+    if root is null:
+        return newNode  # If the tree is empty, the new node becomes the root
+    
+    current ← root
+    while true:
+        if value < current.value:
+            if current.left is null:
+                current.left ← newNode
+                break
+            current ← current.left  # Move to the left subtree
+        else:
+            if current.right is null:
+                current.right ← newNode
+                break
+            current ← current.right  # Move to the right subtree
+    
+    return root  # Return the root of the tree
