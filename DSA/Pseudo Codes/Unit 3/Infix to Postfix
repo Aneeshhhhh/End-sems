@@ -1,0 +1,22 @@
+function infixToPostfix(expression):
+    stack ← empty stack
+    output ← empty string
+
+    for each character in expression:
+        if character is operand:
+            output ← output + character
+        else if character is '(':
+            push(stack, character)
+        else if character is ')':
+            while top(stack) ≠ '(':
+                output ← output + pop(stack)
+            pop(stack)  # Discard the '('
+        else if character is operator:
+            while stack is not empty and precedence(top(stack)) ≥ precedence(character):
+                output ← output + pop(stack)
+            push(stack, character)
+
+    while stack is not empty:
+        output ← output + pop(stack)
+
+    return output
