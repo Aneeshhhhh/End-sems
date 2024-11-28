@@ -1,0 +1,47 @@
+function delete(root, value):
+    parent ← null
+    current ← root
+    
+    # Find the node to be deleted
+    while current is not null and current.value != value:
+        parent ← current
+        if value < current.value:
+            current ← current.left
+        else:
+            current ← current.right
+    
+    if current is null:
+        return root  # Value not found
+    
+    # Case 1: Node is a leaf
+    if current.left is null and current.right is null:
+        if current == root:
+            root ← null
+        else if parent.left == current:
+            parent.left ← null
+        else:
+            parent.right ← null
+
+    # Case 2: Node has one child
+    else if current.left is null or current.right is null:
+        child ← current.left if current.left is not null else current.right
+        if current == root:
+            root ← child
+        else if parent.left == current:
+            parent.left ← child
+        else:
+            parent.right ← child
+
+    # Case 3: Node has two children
+    else:
+        inorderSuccessor ← findMin(current.right)
+        value ← inorderSuccessor.value
+        current.value ← value
+        current.right ← delete(current.right, value)
+
+    return root
+
+function findMin(node):
+    while node.left is not null:
+        node ← node.left
+    return node
