@@ -1,0 +1,26 @@
+function evaluatePostfix(expression, values):
+    stack ← Initialize(empty stack)
+    
+    for each character in expression:
+        if character is an operand:
+            push(stack, values[character]) # Push the value of the operand onto the stack
+        else if character is an operator:
+            operand2 ← pop(stack) # Second operand
+            operand1 ← pop(stack) # First operand
+            
+            result ← applyOperator(character, operand1, operand2)
+            push(stack, result) # Push the result back onto the stack
+    
+    return pop(stack) # The final result is the last element on the stack
+
+function applyOperator(operator, operand1, operand2):
+    if operator == '+':
+        return operand1 + operand2
+    else if operator == '-':
+        return operand1 - operand2
+    else if operator == '*':
+        return operand1 * operand2
+    else if operator == '/':
+        return operand1 / operand2
+    else:
+        throw "Invalid operator"
