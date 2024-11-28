@@ -1,0 +1,8 @@
+function searchBTDFS(node, value):
+    if node is null:
+        return false  # Value not found
+
+    if node.value == value:
+        return true  # Value found
+
+    return searchBTDFS(node.left, value) or searchBTDFS(node.right, value)
