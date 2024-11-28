@@ -1,0 +1,21 @@
+Enqueue : Inserting an element on the rear side of the queue.
+
+Approach:
+ENQUEUE(queue, element)
+if rear == capacity - 1
+print Queue Overflow
+else 
+front = 0
+rear = rear +1
+queue[rear] = element
+
+Dequeue : Deleting and returning the front end element
+
+Approach : 
+DEQUEUE(queue)
+if front == -1 or front > rear
+print Underflow
+if front == rear;
+front = rear = -1
+else 
+front = front + 1
