@@ -1,0 +1,16 @@
+function inorderTraversal(root):
+    stack ← Initialize empty stack
+    current ← root
+
+    while stack is not empty or current is not null:
+        # Go to the leftmost node
+        while current is not null:
+            push(stack, current)
+            current ← current.left
+
+        # Visit the node at the top of the stack
+        current ← pop(stack)
+        print(current.value)  # Process the node
+
+        # Move to the right subtree
+        current ← current.right
