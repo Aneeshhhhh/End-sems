@@ -1,0 +1,52 @@
+function infixToPrefix(expression):
+    # Step 1: Reverse the input expression
+    reversedExpression ← reverse(expression)
+    
+    # Step 2: Swap '(' with ')' and ')' with '('
+    for each character in reversedExpression:
+        if character == '(':
+            replace character with ')'
+        else if character == ')':
+            replace character with '('
+    
+    # Step 3: Convert the modified expression to postfix
+    postfix ← infixToPostfix(reversedExpression)
+    
+    # Step 4: Reverse the postfix expression to get prefix
+    prefix ← reverse(postfix)
+    
+    # Step 5: Return the prefix expression
+    return prefix
+
+function infixToPostfix(expression):
+    stack ← empty stack  # Initialize an empty stack
+    postfix ← empty string  # Initialize an empty string to store the postfix expression
+    
+    for each character in expression:
+        if character is an operand:
+            append character to postfix
+        else if character == '(':
+            push character to stack
+        else if character == ')':
+            while stack is not empty and top of stack != '(':
+                append pop(stack) to postfix
+            pop(stack)  # Remove the '(' from the stack
+        else:  # If the character is an operator
+            while stack is not empty and precedence(top of stack) >= precedence(character):
+                append pop(stack) to postfix
+            push character to stack
+    
+    # Pop all remaining operators in the stack
+    while stack is not empty:
+        append pop(stack) to postfix
+    
+    return postfix
+
+function precedence(operator):
+    if operator == '+' or operator == '-':
+        return 1
+    else if operator == '*' or operator == '/':
+        return 2
+    else if operator == '^':
+        return 3
+    return 0
