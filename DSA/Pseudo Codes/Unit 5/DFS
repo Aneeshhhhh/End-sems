@@ -1,0 +1,7 @@
+function DFS(graph, node, visited):
+    mark node as visited
+    process(node)  # Perform required operation (e.g., print node)
+    
+    for each neighbor in graph[node]:
+        if neighbor is not visited:
+            DFS(graph, neighbor, visited)
