@@ -1,0 +1,7 @@
+function inorderTraversal(node):
+    if node is null:
+        return  # Base case: empty subtree
+
+    inorderTraversal(node.left)   # Recursively traverse the left subtree
+    print(node.value)             # Process the current node
+    inorderTraversal(node.right)  # Recursively traverse the right subtree
