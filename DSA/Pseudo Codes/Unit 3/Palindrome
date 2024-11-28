@@ -1,0 +1,14 @@
+palindrome(Sentence)
+    create a stack Stack
+
+    while(Stack.size!>Sentence.length/2)
+        for each char c in Sentence
+            add c to Stack
+
+    sentence_index is Stack.size
+    while Stack is not empty
+        increment sentence_index 
+        if Sentence.charAt(sentence_index) is not equal to stack.pop
+            return false
+
+    return true
