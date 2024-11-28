@@ -1,0 +1,11 @@
+function searchBST(node, value):
+    if node is null:
+        return false  # Value not found
+
+    if node.value == value:
+        return true  # Value found
+
+    if value < node.value:
+        return searchBST(node.left, value)  # Recur on the left subtree
+    else:
+        return searchBST(node.right, value)  # Recur on the right subtree
